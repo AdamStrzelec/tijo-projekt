@@ -1,0 +1,162 @@
+.wrapper{
+    padding: 10px 30px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    height: 500px;
+    // background: green;
+    .header{
+        color: rgb(65, 65, 65);
+        font-weight: 500;
+    }
+    .author{
+        // background: rgb(188, 187, 255);
+        position: relative;
+        display: flex;
+        height: 150px;
+        margin-bottom: 40px;
+
+        .searchAuthor{
+            width: 50%;
+            height: 150px;
+            position: absolute;
+            // overflow: hidden;
+            border-radius: 10px;
+            .authors{
+                padding: 0;
+                list-style: none;
+                li{
+                    margin: 15px 10px;
+                    font-weight: bold;
+                    color: rgb(63, 63, 63);
+                    
+                    
+                }
+            }
+        }
+        // .searchAuthor:focus-within{
+        //     // height: 150px;
+        //     .foundedAuthorsActive{
+        //         width: 100%;
+        //         height: 115px;
+        //         background: darkseagreen;
+        //         pointer-events: all;
+        //         // display: block;
+        //         .authors{
+        //             // display: block;
+        //             cursor: pointer;
+        //             color: black;
+        //             pointer-events: all;
+        //         }
+        //     }
+        // }
+        .foundedAuthorsActive{
+            position: absolute;
+            top: 35px;
+            width: 100%;
+            height: 115px;
+            // background: brown;
+            // pointer-events: none;
+            background: rgb(255, 236, 183);
+            .authors{
+                cursor: pointer;   
+            }
+            // display: none
+            // background: darkorange;
+        }
+        .addedAuthors{
+            margin-left: 50%;
+            ul{
+                padding: 0;
+                margin: 15px 25px;
+                list-style: none;
+                li{
+                    margin: 10px 15px;
+                    padding: 5px 10px;
+                    font-weight: bold;
+                    display: inline-block;
+                    background: indianred;
+                    border-radius: 15px;
+                    color: rgb(70, 70, 70);
+                    pointer-events: none;
+                    span{
+                        color: white;
+                        pointer-events: all;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .booksQuantity{
+            position: absolute;
+            bottom: 5px;
+            right: 250px;
+            display: flex;
+            align-items: center;
+            p{
+                margin: 0;
+                font-weight: 500;
+                font-size: 20px;
+                span{
+                    margin-left: 20px;
+                    color: blueviolet;
+                    display: block;
+                    width: 40px;
+                }
+            }
+            .booksQuantitySwitch{
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+                button{
+                    width: 50px;
+                    height: 20px;
+                    color: white;
+                    background: rosybrown;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-bottom: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .addBookButton{
+            position: absolute;
+            bottom: 10px;
+            right: 30px;
+            color: white;
+            background: chocolate;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+    }
+
+    .addAuthor{
+        // position: absolute;
+        width: 100%;
+        display: flex;
+
+        button{
+            height: 35px;
+            margin-left: 20px;
+            color: white;
+            background: chocolate;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+    }
+
+}

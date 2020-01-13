@@ -1,0 +1,103 @@
+.modalBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    .modalWindow{
+        width: 50%;
+        min-height: 320px;
+        padding: 20px 0px;
+        background: white;
+        max-width: 600px;
+        min-width: 350px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .modalTitle{
+            color: rgb(119, 119, 119);
+            font-size: 30px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        form{
+            text-align: center;
+            width: 320px;
+            .submitButton{
+                height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
+                background: rgb(35, 142, 88);
+                border: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        .closeModalButton{
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            cursor: pointer;
+            color: white;
+            background: rgb(112, 179, 218);
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        .address{
+            width: 320px;
+            height: 35px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            .street{
+                width: 200px;
+            }
+            .homeNumber{
+                width: 100px;
+            }
+        }
+    }
+}
+.modalButton{
+    margin: 5px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    // background: rgb(35, 142, 88);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+.infoModal{
+    width: 100%;
+    text-align: center;
+
+    .modalInfoMessage{
+        font-weight: 400;
+    }
+    .confirmButton{
+        @extend .modalButton;
+        background: rgb(35, 142, 88);
+    }
+    .cancelButton{
+        @extend .modalButton;
+        background: rgb(0, 132, 255);
+    }
+}

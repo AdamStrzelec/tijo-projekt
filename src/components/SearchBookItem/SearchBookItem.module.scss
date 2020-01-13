@@ -1,0 +1,65 @@
+.wrapper{
+    width: 80%;
+    height: 80px;
+    background: rgb(226, 226, 226);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    .bookImage{
+        width: 70px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        img{
+            width: 70px;
+            height: auto;
+            // object-fit: contain;
+        }
+    }
+}
+.bookName{
+    color: rgb(0, 111, 185);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    // padding-top: 20px;
+}
+.bookInfoLeft{
+    padding: 10px 0;
+    margin-left: 20px;
+}
+.bookInfoRight{
+    padding: 10px 0;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    position: absolute;
+    right: 0;
+    p{
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: right;
+        strong{
+            color: rgb(0, 111, 185);
+        }
+    }
+}
+.authors{
+    
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        li{
+            margin-right: 15px;
+            p{
+                margin: 7px 0;
+                color: rgb(197, 53, 0);
+            }
+        }
+    }
+}

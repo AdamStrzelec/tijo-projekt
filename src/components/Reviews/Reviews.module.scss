@@ -1,0 +1,40 @@
+.wrapper{
+    width: 80%;
+    min-width: 900px;
+    height: 200px;
+    background: rgb(231, 231, 231);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    position: relative;
+}
+.reviewHeader{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 60px);
+    padding: 10px 30px;
+    background: rgb(65, 65, 65);
+    font-weight: bold;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: white;
+    .authorWrapper{
+        margin: 0 20px;
+    }
+    .gradeWrapper{
+        strong{
+            color: rgb(43, 144, 226);
+        }
+    }
+}
+.review{
+    width: 100%;
+    padding: 10px 30px;
+}

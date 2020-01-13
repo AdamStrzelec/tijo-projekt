@@ -1,0 +1,129 @@
+.wrapper{
+    background: rgb(226, 226, 226);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+.mainInfoContainer{
+    
+    display: flex;
+    margin-left: 30px;
+    .bookImage{
+        width: 20%;
+        min-width: 250px;
+        height: 370px;
+        margin-top: 15px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .mainInfo{
+        // background: yellow;
+        width: 50%;
+        min-width: 400px;
+        margin-left: 30px;
+        .bookName{
+            .bookNameHeader{
+                color: rgb(97, 97, 97);
+            }
+        }
+
+    .authorsWrapper{
+        margin-top: 50px;
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: rgb(109, 109, 109);
+        }
+        ul{
+            margin: 10px 0;
+            padding: 0;
+            display: flex;
+            li{
+                list-style-type: none;
+                margin-right: 20px;
+                font-weight: 500;
+                color: rgb(199, 129, 0);
+            }
+        }
+    }
+        .addGradeButton{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            background: chocolate;
+        }
+    }
+    .rentInfo{
+        width: 30%;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        .rentInfoButton{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+
+            .edit{
+                margin-top: 30px;
+                margin-bottom: 10px;
+                width: 200px;
+                height: 40px;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                color: white;
+                background: rgb(13, 168, 13);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }    
+        
+        .rentNowButton{
+            @extend .rentInfoButton;
+            background: rgb(43, 144, 226);
+        }
+    }
+}
+.additionalInfo{
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 50px;
+        color: rgb(109, 109, 109);
+        strong{
+            color: rgb(0, 140, 196);
+        }
+    }
+}
+.bookDescription{
+    h2{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    padding: 0 60px;
+}

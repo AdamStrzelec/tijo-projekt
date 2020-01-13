@@ -1,0 +1,103 @@
+.wrapper{
+    width: 80%;
+    min-width: 900px;
+    height: 200px;
+    background: rgb(231, 231, 231);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    position: relative;
+}
+.bookItemImage{
+    width: 120px;
+    height: 180px;
+    img{
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+.bookInfo{
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+    // position: relative;
+    .bookName{
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        top: 10px;
+        color: rgb(0, 120, 189);
+        font-family: "Montserrat", sans-serif;
+    }
+    .authorWrapper{
+        margin-top: 0;
+        margin-bottom: 15px;
+        position: absolute;
+        top: 45px;
+        display: flex;
+        flex-direction: row;
+        .author{
+            font-size: 15px;
+            font-weight: 500;
+            color: orangered;
+            margin-right: 20px;
+        }
+    }
+
+    .descriptionWrapper{
+        max-height: 110px;
+        overflow: hidden;
+        position: absolute;
+        top: 70px;
+        width: 50%;
+        // max-width: 500px;
+        .description{
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+    
+    
+    .rating{
+        position: absolute;
+        bottom: -2px;
+        color: rgb(139, 32, 32);
+        font-weight: bold;
+    }
+}
+.addEditBtn{
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    // background: rgb(13, 168, 13);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addBook{
+    @extend .addEditBtn;
+
+    background: rgb(13, 168, 13);
+}
+.editBook{
+    @extend .addEditBtn;
+    background: darkblue;
+}
+.edit{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
